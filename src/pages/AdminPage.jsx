@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import blogApi from '../services/blogApi';  // ✅ Default import
-import Deleteblog from '../components/Deleteblog';
 
 const AdminPage = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
