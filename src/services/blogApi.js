@@ -6,7 +6,7 @@ const blogApi = {
   createBlog: async (formData) => {
     try {
       console.log('Submitting form data:', formData);
-      const response = await axios.post(`${API_BASE_URL}/create`, formData, {
+      const response = await axios.post(`${API_BASE_URL}create`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data'
         }
