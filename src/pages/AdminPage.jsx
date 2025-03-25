@@ -229,7 +229,7 @@ const AdminPage = () => {
           </div>
         </form>
       </div>
-      <Deleteblog/>
+      
     </motion.div>
   );
 };
