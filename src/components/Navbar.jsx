@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-white shadow-sm sticky top-0 z-50">
+    <nav className="w-full bg-white  sticky top-0 z-50">
       {/* Desktop Navbar */}
       <div className="container mx-auto px-4 py-4 hidden md:flex justify-between items-center">
         <Link to="/" className="text-[#104734] text-2xl font-semibold font-poppins hover:scale-105 transition-transform">
