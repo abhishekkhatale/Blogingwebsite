@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 
-function BlogCard() {
+function Deleteblog() {
   const [blogs, SetBlogs] = useState([]);
 
   // Fetch Blogs
@@ -36,7 +36,10 @@ function BlogCard() {
   };
 
   return (
-    <div>
+    <div className='py-10'>
+        <div className='w-full flex justify-center items-center'>
+        <h1 className='text-3xl font-medium'>All blogs</h1>
+            </div>
       {blogs.length > 0 ? (
         blogs.map((p) => (
           <div
@@ -69,4 +72,4 @@ function BlogCard() {
   );
 }
 
-export default BlogCard;
+export default Deleteblog;
