@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import blogApi from '../services/blogApi';  // ✅ Default import
+import Deletevlog from '../components/Deletevlog';
 
 const AdminPage = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -117,8 +118,10 @@ const AdminPage = () => {
                 Login
               </button>
             </form>
+            
           </motion.div>
         </div>
+       
       </motion.div>
     );
   }
@@ -228,7 +231,7 @@ const AdminPage = () => {
           </div>
         </form>
       </div>
-      
+      <Deletevlog/>
     </motion.div>
   );
 };
